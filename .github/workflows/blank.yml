@@ -12,10 +12,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Set up Python ${{ matrix.python-version }}
+      - name: Set up Python ${{ matrix.python-version[0] }}
         uses: actions/setup-python@v4
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: ${{ matrix.python-version[0] }}
       - name: Display Python version
         run: | 
           python3 test_action.py >> artifact-file.txt
