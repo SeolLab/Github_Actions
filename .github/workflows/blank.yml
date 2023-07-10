@@ -18,14 +18,12 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Display Python version
       - run: mkdir -p path/to/artifact
-      - run: | 
-          cp python3 test_action.py path/to/artifact/test_action.py
+      - run: cp python3 test_action.py path/to/artifact/test_action.py
       - name: Upload artifact
         uses: actions/upload-artifact@v3.1.2
         with:
           name: Python-Artifact 
-          path: |
-            path/to/artifact/test_action.py
+          path: path/to/artifact/test_action.py
 
           if-no-files-found: warn
           retention-days: 7
