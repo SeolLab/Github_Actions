@@ -23,6 +23,6 @@ jobs:
         uses: actions/upload-artifact@v3.1.2
         with:
           name: Python-Artifact
-          path: path/to/artifact/directory
+          path: path/to/artifact
           if-no-files-found: warn
           retention-days: 7
