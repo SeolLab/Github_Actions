@@ -24,7 +24,7 @@ jobs:
         with:
           name: Python-Artifact 
           path: |
-            /.github/workflows/
+            SeolLab/Github_Actions/.github/workflows/
       
           if-no-files-found: warn
           retention-days: 7
