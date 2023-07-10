@@ -19,8 +19,10 @@ jobs:
       - name: Display Python version
         run: | 
           python3 test_action.py
-      - name: Archive artifacts
-        uses: actions/upload-artifact@v2
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3.1.2
         with:
           name: Python-Artifact
           path: path/to/artifact/directory
+          if-no-files-found: warn
+          retention-days: 7
