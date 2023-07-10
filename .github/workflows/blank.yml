@@ -17,8 +17,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Display Python version
-      - run: mkdir -p path/to/artifact
-      - run: cp python3 test_action.py path/to/artifact/test_action.py
+      - run: mkdir -p .github/workflows/
       - name: Upload artifact
         uses: actions/upload-artifact@v3.1.2
         with:
