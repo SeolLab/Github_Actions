@@ -23,7 +23,7 @@ jobs:
         uses: actions/upload-artifact@v3.1.2
         with:
           name: Python-Artifact 
-          path: path/to/artifact/test_action.py
+          path: .github/workflows/
 
           if-no-files-found: warn
           retention-days: 7
