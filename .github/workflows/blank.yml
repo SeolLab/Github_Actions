@@ -24,9 +24,8 @@ jobs:
         with:
           name: Python-Artifact 
           path: |
-            path/output/bin/
-            path/output/test-results
-            !path/**/*.tmp
+            /home/runner/work/Github_Actions/Github_Actions/path/output
+            path/**/[abc]rtifac?/*
       
           if-no-files-found: warn
           retention-days: 7
